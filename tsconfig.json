@@ -3,10 +3,7 @@
         "module": "amd",
         "target": "es5",
         "sourceMap": true,
-        "typeRoots": [
-            "typings"
-        ],
-        "types": []
+        "moduleResolution": "node"
     },
     "exclude": [
         "node_modules",

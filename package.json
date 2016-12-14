@@ -12,7 +12,7 @@
         "build:release": "npm run clean && mkdir dist && webpack --progress --colors --config webpack.prod.config.js --output-path ./dist -p",
         "package:release": "npm run build:release && node ./scripts/packageRelease",
         "copy:libs": "cpx node_modules/vss-web-extension-sdk/lib/VSS.SDK.min.js libs && cpx node_modules/q/q.js libs",
-        "postinstall": "npm run copy:libs && typings install"
+        "postinstall": "npm run copy:libs"
     },
     "devDependencies": {
         "copy-webpack-plugin": "^4.0.1",
@@ -21,7 +21,7 @@
         "tfx-cli": "^0.3.45",
         "ts-loader": "^1.3.0",
         "typings": "^2.0.0",
-        "typescript": "~2.0.9",
+        "typescript": "~2.1.4",
         "webpack": "^1.14.0",
         "webpack-dev-server": "^1.16.2"
     },
