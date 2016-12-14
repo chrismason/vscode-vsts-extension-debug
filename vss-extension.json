@@ -1,0 +1,74 @@
+{
+    "manifestVersion": 1,
+    "id": "vscode-vsts-extension-debug",
+    "version": "0.0.0",
+    "name": "VSCode / VSTS Extension Debug",
+    "scopes": [
+        "vso.profile",
+        "vso.work",
+        "vso.work_write"
+    ],
+    "description": "This extension is a sample project to show a development and debugging workflow for VSTS extension development in VSCode.",
+    "publisher": "",
+    "public": false,
+    "icons": {
+        "default": "marketplace/logo.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "tags": [
+        "Demo"
+    ],
+    "links": {
+        "support": {
+            "uri": "https://github.com/masonch/vscode-vsts-extension-debug"
+        }
+    },
+    "branding": {
+        "color": "rgb(51,65,133)",
+        "theme": "dark"
+    },
+    "files": [
+        {
+            "path": "css",
+            "addressable": true
+        },
+        {
+            "path": "img",
+            "addressable": true
+        },
+        {
+            "path": "libs",
+            "addressable": true
+        },
+        {
+            "path": "src",
+            "addressable": true
+        },
+        {
+            "path": "marketplace",
+            "addressable": true
+        }
+    ],
+    "categories": [
+        "Plan and track"
+    ],
+    "contributions": [
+        {
+            "id": "vscode-vsts-debug",
+            "targets": [
+                "ms.vss-web.home-hub-group"
+            ],
+            "type": "ms.vss-web.hub",
+            "description": "VSCode / VSTS Debugging",
+            "properties": {
+                "name": "Demo",
+                "uri": "src/vscode-vsts.html",
+                "registeredObjectId": "vscode-vsts-debug-menu"
+            }
+        }
+    ]
+}
